@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_iyIrIEMkEe6W_tuTv1tHjA" name="sqlServerDemo" bonitaModelVersion="7.12.0-004">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/bpm/configuration" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:parameter="http://www.bonitasoft.org/ns/bpm/parameter" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+  <process:MainProcess xmi:id="_iyIrIEMkEe6W_tuTv1tHjA" name="sqlServerDemo" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_iyIrIUMkEe6W_tuTv1tHjA" name="sqlServerDemo">
       <elements xmi:type="process:Lane" xmi:id="_iyIrIkMkEe6W_tuTv1tHjA" name="Employee lane" actor="_iyIrO0MkEe6W_tuTv1tHjA">
         <elements xmi:type="process:StartEvent" xmi:id="_iyIrI0MkEe6W_tuTv1tHjA" name="Start1" outgoing="_iyIrOEMkEe6W_tuTv1tHjA">
@@ -13,7 +13,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_iyIrKUMkEe6W_tuTv1tHjA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_iyIrKkMkEe6W_tuTv1tHjA" name="" content="" returnTypeFixed="true"/>
           <connectors xmi:type="process:Connector" xmi:id="_ClE4UEMlEe6W_tuTv1tHjA" name="callStoreProcedure" definitionId="database-mssqlserver" event="ON_ENTER" definitionVersion="1.2.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ClE4UUMlEe6W_tuTv1tHjA" definitionId="database-mssqlserver" version="1.2.1" modelVersion="7.12.0-004">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_ClE4UUMlEe6W_tuTv1tHjA" definitionId="database-mssqlserver" version="1.2.1" modelVersion="8">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_ClE4UkMlEe6W_tuTv1tHjA" key="driver">
                 <expression xmi:type="expression:Expression" xmi:id="_ClE4U0MlEe6W_tuTv1tHjA" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
               </parameters>
@@ -80,7 +80,7 @@
             </outputs>
           </connectors>
           <connectors xmi:type="process:Connector" xmi:id="_QKflIEMlEe6W_tuTv1tHjA" name="getResult" definitionId="database-mssqlserver" event="ON_ENTER" definitionVersion="1.2.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_QKflIUMlEe6W_tuTv1tHjA" definitionId="database-mssqlserver" version="1.2.1" modelVersion="7.12.0-004">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_QKflIUMlEe6W_tuTv1tHjA" definitionId="database-mssqlserver" version="1.2.1" modelVersion="8">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_QKflIkMlEe6W_tuTv1tHjA" key="driver">
                 <expression xmi:type="expression:Expression" xmi:id="_QKflI0MlEe6W_tuTv1tHjA" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
               </parameters>
@@ -121,7 +121,7 @@
             </outputs>
           </connectors>
           <connectors xmi:type="process:Connector" xmi:id="_IC6dMEMpEe6W_tuTv1tHjA" name="deleteTempRecord" definitionId="database-mssqlserver" event="ON_ENTER" definitionVersion="1.2.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_IC6dMUMpEe6W_tuTv1tHjA" definitionId="database-mssqlserver" version="1.2.1" modelVersion="7.12.0-004">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_IC6dMUMpEe6W_tuTv1tHjA" definitionId="database-mssqlserver" version="1.2.1" modelVersion="8">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IC6dMkMpEe6W_tuTv1tHjA" key="driver">
                 <expression xmi:type="expression:Expression" xmi:id="_IC6dM0MpEe6W_tuTv1tHjA" name="com.microsoft.sqlserver.jdbc.SQLServerDriver" content="com.microsoft.sqlserver.jdbc.SQLServerDriver" returnTypeFixed="true"/>
               </parameters>
@@ -189,7 +189,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_DeJ1YUMlEe6W_tuTv1tHjA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_iyIrO0MkEe6W_tuTv1tHjA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_D32HwEMlEe6W_tuTv1tHjA" name="Qualification" version="7.12.0-004" username="walter.bates">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_D32HwEMlEe6W_tuTv1tHjA" name="Qualification" version="8" username="walter.bates">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_D32u0UMlEe6W_tuTv1tHjA">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_D32u0kMlEe6W_tuTv1tHjA" name="Employee actor">
             <groups xmi:type="actormapping:Groups" xmi:id="_D32u00MlEe6W_tuTv1tHjA"/>
@@ -249,23 +249,23 @@
   </process:MainProcess>
   <notation:Diagram xmi:id="_iyIrVUMkEe6W_tuTv1tHjA" type="Process" element="_iyIrIEMkEe6W_tuTv1tHjA" name="MyDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Node" xmi:id="_iyIrVkMkEe6W_tuTv1tHjA" type="2007" element="_iyIrIUMkEe6W_tuTv1tHjA">
-      <children xmi:type="notation:DecorationNode" xmi:id="_iyIrV0MkEe6W_tuTv1tHjA" type="5008"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_iyIrWEMkEe6W_tuTv1tHjA" type="7001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iyIrV0MkEe6W_tuTv1tHjA" type="5008" element="_iyIrIUMkEe6W_tuTv1tHjA"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_iyIrWEMkEe6W_tuTv1tHjA" type="7001" element="_iyIrIUMkEe6W_tuTv1tHjA">
         <children xmi:type="notation:Node" xmi:id="_iyIrWUMkEe6W_tuTv1tHjA" type="3007" element="_iyIrIkMkEe6W_tuTv1tHjA">
-          <children xmi:type="notation:DecorationNode" xmi:id="_iyIrWkMkEe6W_tuTv1tHjA" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_iyIrW0MkEe6W_tuTv1tHjA" type="7002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_iyIrWkMkEe6W_tuTv1tHjA" type="5007" element="_iyIrIkMkEe6W_tuTv1tHjA"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_iyIrW0MkEe6W_tuTv1tHjA" type="7002" element="_iyIrIkMkEe6W_tuTv1tHjA">
             <children xmi:type="notation:Shape" xmi:id="_iyIrX0MkEe6W_tuTv1tHjA" type="3002" element="_iyIrI0MkEe6W_tuTv1tHjA" fontName=".AppleSystemUIFont">
-              <children xmi:type="notation:DecorationNode" xmi:id="_iyIrYEMkEe6W_tuTv1tHjA" type="5024">
+              <children xmi:type="notation:DecorationNode" xmi:id="_iyIrYEMkEe6W_tuTv1tHjA" type="5024" element="_iyIrI0MkEe6W_tuTv1tHjA">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_iyIrYUMkEe6W_tuTv1tHjA" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iyIrYkMkEe6W_tuTv1tHjA" x="60" y="68"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_jy3IUEMkEe6W_tuTv1tHjA" type="3027" element="_jywaoEMkEe6W_tuTv1tHjA" fontName=".AppleSystemUIFont" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_jy3IUkMkEe6W_tuTv1tHjA" type="5017"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_jy3IUkMkEe6W_tuTv1tHjA" type="5017" element="_jywaoEMkEe6W_tuTv1tHjA"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jy3IUUMkEe6W_tuTv1tHjA" x="160" y="60" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_DeAEYEMlEe6W_tuTv1tHjA" type="3003" element="_Dd-PMEMlEe6W_tuTv1tHjA" fontName=".AppleSystemUIFont">
-              <children xmi:type="notation:DecorationNode" xmi:id="_DeAEYkMlEe6W_tuTv1tHjA" type="5025">
+              <children xmi:type="notation:DecorationNode" xmi:id="_DeAEYkMlEe6W_tuTv1tHjA" type="5025" element="_Dd-PMEMlEe6W_tuTv1tHjA">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_DeArcEMlEe6W_tuTv1tHjA" y="5"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DeAEYUMlEe6W_tuTv1tHjA" x="429" y="92"/>
@@ -286,14 +286,14 @@
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_iyIrbUMkEe6W_tuTv1tHjA"/>
     <edges xmi:type="notation:Connector" xmi:id="_iyIrbkMkEe6W_tuTv1tHjA" type="4001" element="_iyIrOEMkEe6W_tuTv1tHjA" source="_iyIrX0MkEe6W_tuTv1tHjA" target="_jy3IUEMkEe6W_tuTv1tHjA" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_iyIrb0MkEe6W_tuTv1tHjA" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iyIrb0MkEe6W_tuTv1tHjA" type="6001" element="_iyIrOEMkEe6W_tuTv1tHjA">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_iyIrcEMkEe6W_tuTv1tHjA" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_iyIrcUMkEe6W_tuTv1tHjA" fontName=".AppleSystemUIFont"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iyIrckMkEe6W_tuTv1tHjA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_DeKccEMlEe6W_tuTv1tHjA" type="4001" element="_DeJOUEMlEe6W_tuTv1tHjA" source="_jy3IUEMkEe6W_tuTv1tHjA" target="_DeAEYEMlEe6W_tuTv1tHjA" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_DeLDgEMlEe6W_tuTv1tHjA" type="6001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DeLDgEMlEe6W_tuTv1tHjA" type="6001" element="_DeJOUEMlEe6W_tuTv1tHjA">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_DeLDgUMlEe6W_tuTv1tHjA" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_DeKccUMlEe6W_tuTv1tHjA" fontName=".AppleSystemUIFont"/>
