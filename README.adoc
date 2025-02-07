@@ -1,19 +1,18 @@
 =  Sql Server demo project
+:toc:
 
 This project explains how to use Bonita native database connector to call a SqlSserver store procedure, and retrive it results
 
-== Usage
+== Prepare datbase
 
 our Sql Server demo database is configured with a temp table, and a stored procedure.
 
 
-[source,sql]
-.sqlServerSetup.sql
-----
-include::docs/sqlserver.sql[]
-----
+include::infrastructure/SqlServer/README.adoc[leveloffset=+1]
 
-the database connecotr is used 3 times
+== Run process
+
+the database connector is used 3 times
 
 . call the store procedure, using process instance id as parameter
 . get the result using process instance id as parameter
