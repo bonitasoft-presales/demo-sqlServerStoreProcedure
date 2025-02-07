@@ -1,0 +1,46 @@
+=  Sql Server
+:toc:
+
+== Setup
+
+=== Docker compose file
+
+.docker-compose.yml
+[source,yaml]
+----
+include::docker-compose.yml[]
+----
+
+=== Start
+
+.start.sh
+[source,shell]
+----
+include::start.sh[]
+----
+
+=== Stop
+
+.stop.sh
+[source,shell]
+----
+include::stop.sh[]
+----
+
+== Usage
+
+When the Database is up and running, connect as `sa` on master database,
+run the following script to create required schema and content
+
+.createData.sql
+[source,sql]
+----
+include::sql/createData.sql[]
+----
+
+Once completed, connect to `bonita` schema.
+
+== Resources
+
+. https://dbeaver.io/[DBeaver Universal Database Tool]
+. https://github.com/tometchy/Mssql-docker-initialization-demo[]

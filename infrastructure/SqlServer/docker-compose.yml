@@ -1,0 +1,10 @@
+name: sql-server
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=xHq?Qz0goaX{d
+    ports:
+      - 1433:1433
+    restart: always
